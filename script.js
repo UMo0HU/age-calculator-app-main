@@ -70,7 +70,7 @@ function validDate(day, month, year, currentDate) {
     }
 
 
-    if(day == "" || month == "" || year == "" ||  day > 31 || month > 12 || futureDate)
+    if(day == "" || month == "" || year == "" ||  day > monthDays || month > 12 || futureDate)
         return false;
     else
         return true;
