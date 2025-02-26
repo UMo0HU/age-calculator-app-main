@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Primary */
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    background-color: var(--Light-grey);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card { 
+    background-color: var(--White);
+    /* width: 375px; */
+    /* height: 50%; */
+    padding: 40px;
+    margin: 10px;
+    border-radius: 15px 15px 90px 15px;
+}
+
+/* Top-section section */
+
+.top-section {
+    display: flex;
+    gap: 10px;
+}
+
+.top-section .fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section .fields label {
+    color: var(--Smokey-grey);
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding-bottom: 3px;
+}
+
+.top-section .fields input {
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 900;
+    padding-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--Light-grey);
+}
+
+.top-section .fields p {
+    color: var(--Light-red);
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px;
+}
+
+.top-section .fields input:focus-within {
+    outline: none;
+    border: 2px solid var(--Purple) ;
+}
+
+.error {
+    color: var(--Light-red) !important;
+}
+
+.error-border {
+    border: 2px solid var(--Light-red) !important;
+}
+/* Line Section */
+
+.line .hr {
+    transform: translate(0, 25px);
+    width: 375px;
+    border-bottom: 3px solid var(--Light-grey);
+}
+
+.line button {
+    background-color: var(--Purple);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 90%;
+}
+
+.line button:hover {
+    background-color: black;
+    cursor: pointer;
+
+}
+
+.line button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Age Section */
+.age {
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.age p span {
+    color: var(--Purple);
+}
+
+
+.attribution {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.attribution a {
+    font-weight: 900;
+    color: var(--Purple);
+}
+
+@media  (max-width: 460px) {
+    .card {
+        padding: 40px 20px;
+    }
+
+    /* Top-section section */
+    .top-section {
+        justify-content: space-around;
+    }
+
+    .top-section .fields input {
+        width: 80px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    /* Line section */
+
+    .line {
+        margin: 30px 0;
+    }
+
+    .line button {
+        left: 40%;
+    }
+
+    .line .hr { 
+        width: 100%;
+    }
+}
