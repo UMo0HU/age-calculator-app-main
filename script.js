@@ -123,6 +123,9 @@ btn.addEventListener("click", () => {
         animateValue(dates[1], age.months)
         animateValue(dates[2], age.days)
     }
+    else {
+        return 0;
+    }
 });
 
 
