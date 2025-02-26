@@ -13,7 +13,7 @@ function validDate(day, month, year, currentDate) {
     const futureDate = (year > currentDate.getFullYear() || (year == currentDate.getFullYear() && month > currentDate.getMonth() + 1) || (year == currentDate.getFullYear() && month == currentDate.getMonth() + 1 && day > currentDate.getDate()))? true : false;
     const monthDays = new Date(year, month, 0).getDate();
     // Day Validation:
-    if(day === "") {
+    if(day == "") {
         error[0].innerHTML = "This field is required";
         dayInput.classList.add("error-border");
         dayInput.previousElementSibling.classList.add("error");
@@ -30,7 +30,7 @@ function validDate(day, month, year, currentDate) {
     }
 
     // Month Validation:
-    if(month === "") {
+    if(month == "") {
         error[1].innerHTML = "This field is required";
         monthInput.classList.add("error-border");
         monthInput.previousElementSibling.classList.add("error");
@@ -48,7 +48,7 @@ function validDate(day, month, year, currentDate) {
 
 
     // Year Validation:
-    if(year === "") {
+    if(year == "") {
         error[2].innerHTML = "This field is required";
         yearInput.classList.add("error-border");
         yearInput.previousElementSibling.classList.add("error");
