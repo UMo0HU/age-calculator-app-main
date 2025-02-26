@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/UMo0HU/age-calculator-app-main/tree/main)
+- Live Site URL: [Add live site URL here](https://umo0hu.github.io/age-calculator-app-main/)
 
 ### Built with
 
